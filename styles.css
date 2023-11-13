@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body {
+    background-color: #004346;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 400px;
+    height: 370px;
+    border: 10px solid; 
+}
+/* color for buttons once clicked: 508991 */
+
+.game-card {
+    background-color: white;
+    width: 950px;
+    height: 650px;
+    border-radius: 25px;
+    margin-top: 150px;
+    padding: 30px;
+}
+
+.text {
+    text-align: center; 
+}
+
+.content {
+    display: flex;
+}
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+}

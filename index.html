@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="game-card">
+    <!-- div for the text in top of card -->
+    <div class="text"> 
+        <h1>HANGMAN GAME</h1>
+
+        <h3>Click the letters in the alphabet below to guess the word.</h3>
+
+        <h3>The category is Countries</h3> 
+
+        <div id="hint-msg"></div>
+    </div>
+
+    <div class="content">
+        <!-- container for hangman pictures -->
+        <div class="hangman-container">
+            <img src="assets/hangman-0.png" alt="2D sketch of a gallow, which is used to hang people.">
+        </div>
+
+        <div class="inputs-container"> <!-- container for inputs and buttons to go on side of hangman-->
+            
+            <div id="word"></div>
+        
+            <div class="letter-bttns">
+                <button class="letter-bttn" onclick="clickedLetter('A')">A</button>
+                <button class="letter-bttn" onclick="clickedLetter('B')">B</button>
+                <button class="letter-bttn" onclick="clickedLetter('C')">C</button>
+                <button class="letter-bttn" onclick="clickedLetter('D')">D</button>
+                <button class="letter-bttn"onclick="clickedLetter('E')">E</button>
+                <button class="letter-bttn" onclick="clickedLetter('F')">F</button>
+                <button class="letter-bttn" onclick="clickedLetter('G')">G</button>
+                <button class="letter-bttn" onclick="clickedLetter('H')">H</button>
+                <button class="letter-bttn" onclick="clickedLetter('I')">I</button>
+                <button class="letter-bttn" onclick="clickedLetter('J')">J</button>
+                <button class="letter-bttn" onclick="clickedLetter('K')">K</button>
+                <button class="letter-bttn" onclick="clickedLetter('L')">L</button>
+                <button class="letter-bttn" onclick="clickedLetter('M')">M</button>
+                <button class="letter-bttn" onclick="clickedLetter('N')">N</button>
+                <button class="letter-bttn" onclick="clickedLetter('O')">O</button>
+                <button class="letter-bttn" onclick="clickedLetter('P')">P</button>
+                <button class="letter-bttn" onclick="clickedLetter('Q')">Q</button>
+                <button class="letter-bttn" onclick="clickedLetter('R')">R</button>
+                <button class="letter-bttn" onclick="clickedLetter('S')">S</button>
+                <button class="letter-bttn" onclick="clickedLetter('T')">T</button>
+                <button class="letter-bttn" onclick="clickedLetter('U')">U</button>
+                <button class="letter-bttn" onclick="clickedLetter('V')">V</button>
+                <button class="letter-bttn" onclick="clickedLetter('W')">W</button>
+                <button class="letter-bttn" onclick="clickedLetter('X')">X</button>
+                <button class="letter-bttn" onclick="clickedLetter('Y')">Y</button>
+                <button class="letter-bttn" onclick="clickedLetter('Z')">Z</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="lives-tracker"> Lives used: 0 / 6 </div> 
+
+    <div class="buttons">
+        <div class="replay-bttn">Play Again</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
